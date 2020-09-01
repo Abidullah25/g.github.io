@@ -17,6 +17,19 @@ function reddit(){
     }
 }
 
+function instagram(){
+    var txtBoxInput = document.getElementById('textbox').value
+    if (txtBoxInput == '' || txtBoxInput == ' ') {
+        location = "https://instagram.com/"
+    }
+    else if (txtBoxInput.substring(0, 2) == "r/") {
+        location = "https://instagram.com/" + document.getElementById('textbox').value;
+    }
+    else {
+        location = "https://instagram.com/" + encodeURIComponent(document.getElementById('textbox').value);
+    }
+}
+
 function gmail(){
     var txtBoxInput = document.getElementById('textbox').value
     if (txtBoxInput == '' || txtBoxInput == ' ') {
