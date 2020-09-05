@@ -6,7 +6,7 @@
 ## Setting up
 Depending on your web browser, the set up wil be slightly different. But it should be pretty much the same
 
-Go to your browsers **settings** and set the startup page, home page and [new tab page](https://chrome.google.com/webstore/detail/new-tab-redirect/icpgjfneehieebagbmdbhnlpiopdcmna/) to [Auxiliatrium's website](https://spectrixofficial.github.io/Auxiliatrium/)
+Go to your browsers **settings** and set the startup page, home page and [new tab page](https://chrome.google.com/webstore/detail/new-tab-redirect/icpgjfneehieebagbmdbhnlpiopdcmna/) to [Q-Search's website](https://abood025.github.io/Auxiliatrium/)
 
 After that, you're all ready!
 
