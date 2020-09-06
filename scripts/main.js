@@ -16,13 +16,13 @@ function loadOptionsWindow(html_file_path,event) {
 	
 	var load2 = document.createElement('script');
 	load2.type = 'text/javascript';
-	load2.src ='custombg/js/components/jscolor.js';
+	load2.src ='docs/custombg/js/components/jscolor.js';
 	document.body.appendChild(load2);
 	
 	setTimeout(function(){
 	var load1 = document.createElement('script');
 	load1.type = 'text/javascript';
-	load1.src ='custombg/js/main/options-window.js';
+	load1.src ='docs/custombg/js/main/options-window.js';
 	document.getElementById('options-window').appendChild(load1);		
 	setTimeout(function(){$("#options-window").css('display','block')},10);
 	},10)
