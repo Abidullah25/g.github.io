@@ -4,6 +4,31 @@ function search(getLocation){
     location = getLocation + encodeURIComponent(document.getElementById('textbox').value);
 }
 
+function loadOptionsWindow(html_file_path,event) {
+		
+	$("#options-window").load(html_file_path);  
+	
+	var load1 = document.createElement('link');
+	load1.rel = 'stylesheet';
+	load1.type = 'text/css';
+	load1.href = 'custombg/css/options-window.css';
+	$('head').append(load1);
+	
+	var load2 = document.createElement('script');
+	load2.type = 'text/javascript';
+	load2.src ='custombg/js/components/jscolor.js';
+	document.body.appendChild(load2);
+	
+	setTimeout(function(){
+	var load1 = document.createElement('script');
+	load1.type = 'text/javascript';
+	load1.src ='custombg/js/main/options-window.js';
+	document.getElementById('options-window').appendChild(load1);		
+	setTimeout(function(){$("#options-window").css('display','block')},10);
+	},10)
+	
+}
+
 function reddit(){
     var txtBoxInput = document.getElementById('textbox').value
     if (txtBoxInput == '' || txtBoxInput == ' ') {
