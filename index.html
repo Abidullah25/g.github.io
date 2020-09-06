@@ -16,7 +16,11 @@
   bottom: 8px;
   left: 16px;
   font-size: 18px;
-
+#theme{
+  position: absolute;
+  bottom: 13px;
+  right: 22px;
+  font-size: 20px;}
 }
 </style>
 <body onload=startTime()>
@@ -38,6 +42,11 @@
     <p id="greetingMsg" class="animated fadeIn"></p>
     <p id="clock" class="animated fadeIn"></p>   
 
+  	<div id="theme" onClick="loadOptionsWindow('docs/custombg/options-window.html')">
+        	<p>
+            	<span>Theme</span>
+            </p>
+        </div>
 
     	
 
