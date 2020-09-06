@@ -14,7 +14,7 @@ function load_all()	{
 	
 	var load1 = document.createElement('script');
 	load1.type = 'text/javascript';
-	load1.src ='custombg/js/main/custom-background.js';
+	load1.src ='docs/custombg/js/main/custom-background.js';
 	document.body.appendChild(load1);
 	
 	var load4 = document.createElement('style');
@@ -33,18 +33,18 @@ function loadOptionsWindow(html_file_path,event) {
 	var load1 = document.createElement('link');
 	load1.rel = 'stylesheet';
 	load1.type = 'text/css';
-	load1.href = 'custombg/css/options-window.css';
+	load1.href = 'docs/custombg/css/options-window.css';
 	$('head').append(load1);
 	
 	var load2 = document.createElement('script');
 	load2.type = 'text/javascript';
-	load2.src ='custombg/js/components/jscolor.js';
+	load2.src ='docs/custombg/js/components/jscolor.js';
 	document.body.appendChild(load2);
 	
 	setTimeout(function(){
 	var load1 = document.createElement('script');
 	load1.type = 'text/javascript';
-	load1.src ='custombg/js/main/options-window.js';
+	load1.src ='docs/custombg/js/main/options-window.js';
 	document.getElementById('options-window').appendChild(load1);		
 	setTimeout(function(){$("#options-window").css('display','block')},10);
 	},10)
