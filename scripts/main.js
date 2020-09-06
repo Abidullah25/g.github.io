@@ -16,7 +16,7 @@ function loadOptionsWindow(html_file_path,event) {
 	
 	var load2 = document.createElement('script');
 	load2.type = 'text/javascript';
-	load2.src ='docs/custombg/js/components/jscolor.js';
+	load2.src ='docs/custombg/js/componenets/jscolor.js';
 	document.body.appendChild(load2);
 	
 	setTimeout(function(){
