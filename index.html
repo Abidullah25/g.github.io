@@ -29,9 +29,7 @@
         
     </div>
 
-    <div class="switch">Dark mode:              
-        <span class="inner-switch">OFF</span>
-    </div>
+<button id="change-theme-btn">theme</button>
 
     <p id="greetingMsg" class="animated fadeIn"></p>
     <p id="clock" class="animated fadeIn"></p>   
@@ -43,16 +41,5 @@
 
 <script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js'></script>
 <script type="text/javascript">
-
-$( ".inner-switch" ).on("click", function() {
-    if( $( "body" ).hasClass( "dark" )) {
-      $( "body" ).removeClass( "dark" );
-      $( ".inner-switch" ).text( "OFF" );
-    } else {
-      $( "body" ).addClass( "dark" );
-      $( ".inner-switch" ).text( "ON" );
-    }
-});
-</script>
 </body>
 </html>
