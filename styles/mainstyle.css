@@ -1,5 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
+$dark: #333;
+$light: #fff;
+
 body{
     color: white;
     font-size: 24px;
@@ -8,27 +11,50 @@ body{
     text-align: center;
 }
 
-.dark,
-.dark * {
-    background-color: #222;
-    color: #e6e6e6;
-    border-color: #e6e6e6;
-}
-
-.switch {
-    align-self: flex-end;
-    margin: 0.9375rem;
-}
-.inner-switch {
-    display: inline-block;
+#change-theme-btn {
+    font: inherit;
+    padding: 0.1em 0.25em;
+    border: 0;
+    outline: 0;
+    color: $light;
     cursor: pointer;
-    border: 1px solid #555;
-    border-radius: 1.25rem;
-    width: 3.125rem;
-    text-align: center;
-    font-size: 1rem;
-    padding: 0.1875rem;
-    margin-left: 0.3125rem;
+    transition: all 0.15s ease-out;
+    position: relative;
+    background-color: transparent;
+    overflow: hidden;
+
+    &::before, &::after {
+        content: '';
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $dark;
+        transition: all 0.15s ease-out;
+    }
+
+    &::after {
+        background-color: $light;
+        left: 100%;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    .dark-theme & {
+        color: $dark;
+
+        &::before {
+            left: -100%;
+        }
+
+        &::after {
+            left: 0;
+        }
+    }
 }
 
 #textbox{
