@@ -4,7 +4,7 @@ function search(getLocation){
     location = getLocation + encodeURIComponent(document.getElementById('textbox').value);
 }
 
-<script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js'></script>
+
 
 
 $( ".inner-switch" ).on("click", function() {
