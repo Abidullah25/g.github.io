@@ -5,18 +5,6 @@ function search(getLocation){
 }
 
 
-
-
-$( ".inner-switch" ).on("click", function() {
-    if( $( "body" ).hasClass( "dark" )) {
-      $( "body" ).removeClass( "dark" );
-      $( ".inner-switch" ).text( "OFF" );
-    } else {
-      $( "body" ).addClass( "dark" );
-      $( ".inner-switch" ).text( "ON" );
-    }
-});
-
 function reddit(){
     var txtBoxInput = document.getElementById('textbox').value
     if (txtBoxInput == '' || txtBoxInput == ' ') {
