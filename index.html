@@ -44,5 +44,15 @@
 <script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js'></script>
 <script type="text/javascript">
 
+$( ".inner-switch" ).on("click", function() {
+    if( $( "body" ).hasClass( "dark" )) {
+      $( "body" ).removeClass( "dark" );
+      $( ".inner-switch" ).text( "OFF" );
+    } else {
+      $( "body" ).addClass( "dark" );
+      $( ".inner-switch" ).text( "ON" );
+    }
+});
+</script>
 </body>
 </html>
