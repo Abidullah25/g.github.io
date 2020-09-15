@@ -6,16 +6,14 @@ function search(getLocation){
 }
 
 
-function reddit(){
+function games(){
     var txtBoxInput = document.getElementById('textbox').value
     if (txtBoxInput == '' || txtBoxInput == ' ') {
-        location = "https://www.reddit.com/"
+        location = "https://abood025.github.io/games"
     }
-    else if (txtBoxInput.substring(0, 2) == "r/") {
-        location = "https://www.reddit.com/" + document.getElementById('textbox').value;
-    }
+    
     else {
-        location = "https://www.reddit.com/search?q=" + encodeURIComponent(document.getElementById('textbox').value);
+        location = "https://abood025.github.io/games/" + encodeURIComponent(document.getElementById('textbox').value);
     }
 }
 
