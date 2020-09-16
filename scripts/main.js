@@ -64,6 +64,8 @@ function startTime() {
     var today = new Date();
     var greeting;
     var h = today.getHours();
+    if(h > 12){h = h - 12;}
+    if(h == 0){h = 12;}
     if(h < 12) {
         greeting = "Good morning.";
     }
