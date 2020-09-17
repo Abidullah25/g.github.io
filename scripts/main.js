@@ -63,8 +63,9 @@ function github(){
 function startTime() {
     var today = new Date();
     var greeting;
+    var amORpm = "AM";
     var h = today.getHours();
-    if(h > 12){h = h - 12;}
+    if(h > 12){h = h - 12; amORpm="PM";}
     if(h == 0){h = 12;}
    
 
@@ -72,8 +73,9 @@ function startTime() {
     var s = today.getSeconds();
     m = checkTime(m);
     s = checkTime(s);
+
     document.getElementById('clock').innerHTML =
-    h + ":" + m + ":" + s;
+    h + ":" + m + ":" + s + amORpm;
    
     var t = setTimeout(startTime, 500);
 
