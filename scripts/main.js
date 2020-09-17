@@ -66,15 +66,7 @@ function startTime() {
     var h = today.getHours();
     if(h > 12){h = h - 12;}
     if(h == 0){h = 12;}
-    if(h < 12) {
-        greeting = "Good morning.";
-    }
-    else if(h >= 12 && h < 17) {
-        greeting = "Good afternoon.";
-    }
-    else {
-        greeting = "Good evening.";
-    }
+   
 
     var m = today.getMinutes();
     var s = today.getSeconds();
