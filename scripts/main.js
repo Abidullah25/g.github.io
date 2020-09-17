@@ -82,7 +82,7 @@ function startTime() {
     s = checkTime(s);
     document.getElementById('clock').innerHTML =
     h + ":" + m + ":" + s;
-    document.getElementById('greetingMsg').innerHTML = greeting;
+   
     var t = setTimeout(startTime, 500);
 
 }
